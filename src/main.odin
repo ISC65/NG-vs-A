@@ -11,10 +11,17 @@ main :: proc() {
 	rl.SetTargetFPS(60)
 
 	for !rl.WindowShouldClose() {
+		// Update ---------------------------------------------------------
+
+
+		// ----------------------------------------------------------------
+
+		// Draw -----------------------------------------------------------
 		rl.BeginDrawing()
 		rl.ClearBackground(rl.BLUE)
-		rl.DrawText("The animatrinics are COMING!!!!!!1111!11!1!!11", 20, 20, 20, rl.GREEN)
+		rl.DrawText("The animatrinics are COMING", 20, 20, 20, rl.GREEN)
 		rl.EndDrawing()
+		// ----------------------------------------------------------------
 	}
 	rl.CloseWindow()
 
